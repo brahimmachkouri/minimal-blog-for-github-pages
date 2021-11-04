@@ -1,2 +1,2 @@
-# minimal-blog-for-github-pages
+# Minimal blog for Github Pages
 Minimal Blog for Github Pages
