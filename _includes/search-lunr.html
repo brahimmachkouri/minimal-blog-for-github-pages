@@ -1,0 +1,54 @@
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+
+<script>
+{% assign counter = 0 %}
+var documents = [
+    {% for post in site.posts %}
+        {
+            "url": "{{ site.baseurl }}{{ post.url }}",
+            "title": "{{ post.title }}",
+            "category": "{{ post.category | jsonify | replace: '"', ' ' | replace: '[', ' ' | replace: ']', ' ' | replace: '  ', ' ' }}",
+            "tags": "{{ post.tags | jsonify | replace: '"', ' ' | replace: '[', ' ' | replace: ']', ' ' | replace: '  ', ' ' }}",
+            "id": {{counter}}
+        }
+        {% if forloop.last %}{% else %}, {% endif %}
+        {% assign counter = counter | plus: 1 %}
+    {% endfor %}
+];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('category')
+    this.field('tags')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Résultat de la recherche pour '" + term + ":'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var category = documents[ref]['category'];
+                var tags = documents[ref]['tags'];
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>Aucun résultat trouvé...</li>";
+        }
+    }
+    return false;
+}
+</script>
+
