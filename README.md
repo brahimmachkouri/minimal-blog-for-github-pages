@@ -5,3 +5,5 @@ This is a minimalist blog, for Github Pages, with a search feature (thank to [lu
 There is category page and tags page.
 
 The theme is minima, the default Jekyll theme.
+
+Look at the file _config.yml to configure your blog.
