@@ -41,7 +41,8 @@ title: the title you want for your post \
 category: what category the post belongs to \
 tags : keywords to easily find the post with a search
 
-
-
-
 Then wait for about 1 minute or 2, then go to your blog homepage. (It should be https://yourusername.github.io/repositoryname/)
+
+## Note
+
+If you rename the repository, don't forget to edit the _config.yml file in order to modify the baseurl variable.
