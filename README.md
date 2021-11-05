@@ -24,8 +24,24 @@ To create a new post, create new file in the _posts folder, it should be named a
 
 ![image](https://raw.githubusercontent.com/brahimmachkouri/images/main/gh_create_new_file.png)
 
-And write the ["Front Matter"](https://jekyllrb.com/docs/front-matter/) data before clicking on the commit button :
-
 ![image](https://raw.githubusercontent.com/brahimmachkouri/images/main/gh_create_new_file2.png)
+
+The ["Front Matter"](https://jekyllrb.com/docs/front-matter/) block (example below) is needed before clicking on the commit button :
+```
+---
+layout: post
+date: 2021-11-05 11:29:00
+title: Upgrade Zalman VE-300 firmware to an iodd 2531 firmware
+category: materiel
+tags: zalman iodd firmware
+---
+```
+date: date of the post\
+title: the title you want for your post \
+category: what category the post belongs to \
+tags : keywords to easily find the post with a search
+
+
+
 
 Then wait for about 1 minute or 2, then go to your blog homepage. (It should be https://yourusername.github.io/repositoryname/)
