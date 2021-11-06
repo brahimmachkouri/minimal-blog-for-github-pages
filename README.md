@@ -1,6 +1,6 @@
 # Minimal blog for Github Pages
 
-This is a minimalist blog repository, for Github Pages, with a search feature (thank to [lunr.js](https://lunrjs.com/)) on the pages and articles titles, categories, and tags. The theme is [minima](https://github.com/jekyll/minima), the default Jekyll theme.
+This is a minimalist blog repository, for Github Pages, with a search feature (thank to [lunr.js](https://lunrjs.com/)) on the pages and articles titles, categories, and tags. The theme is [minima](https://github.com/jekyll/minima), the default [Jekyll](https://jekyllrb.com/) theme.
 
 Look at the file _config.yml to configure your blog.
 
