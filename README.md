@@ -4,7 +4,7 @@ This is a minimalist blog repository, for Github Pages, with a search feature (t
 
 There is category page and tags page.
 
-The theme is minima, the default Jekyll theme.
+The theme is [minima](https://github.com/jekyll/minima), the default Jekyll theme.
 
 Look at the file _config.yml to configure your blog.
 
