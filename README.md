@@ -1,14 +1,12 @@
 # Minimal blog for Github Pages
 
-This is a minimalist blog repository, for Github Pages, with a search feature (thank to [lunr.js](https://lunrjs.com/)) on the pages and articles titles, categories, and tags.
-
-There is category page and tags page.
-
-The theme is [minima](https://github.com/jekyll/minima), the default Jekyll theme.
+This is a minimalist blog repository, for Github Pages, with a search feature (thank to [lunr.js](https://lunrjs.com/)) on the pages and articles titles, categories, and tags. The theme is [minima](https://github.com/jekyll/minima), the default Jekyll theme.
 
 Look at the file _config.yml to configure your blog.
 
-## How to convert to Github Pages
+There is a page that lists all the categories, and a page that lists all the tags (this one is optional : look at the _config.yml to enable or disable it).
+
+## How to convert your repository to Github Pages
 
 To convert this repository to a Github Pages blog, go to Settings, and click on "Pages" :
 
@@ -45,4 +43,4 @@ Then wait for about 1 minute or 2, then go to your blog homepage. (It should be 
 
 ## Note
 
-If you rename your repository, don't forget to edit the _config.yml file in order to modify the baseurl variable also.
+If you rename your repository (in Settings), don't forget to edit the _config.yml file in order to modify the baseurl variable also.
