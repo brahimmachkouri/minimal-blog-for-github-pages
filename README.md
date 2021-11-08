@@ -43,4 +43,4 @@ Then wait for about 1 minute or 2, then go to your blog homepage. (It should be 
 
 ## Note
 
-If you rename your repository (in Settings), don't forget to edit the _config.yml file in order to modify the baseurl variable also.
+If you rename your repository (you can do it in Settings), don't forget to edit the _config.yml file in order to modify the baseurl variable also.
