@@ -16,7 +16,7 @@ Click on "main" in the dropbox and Save to finish :
 
 ![image](https://raw.githubusercontent.com/brahimmachkouri/images/main/settings_ghpages2.png)
 
-## How to create to create a new post
+## How to create a new post
 
 To create a new post, create new file in the _posts folder, it should be named as a date followed by post title, with words separated by dashes, for example: “2021-11-05-upgrade-zalman-firmware-to-iodd.md”.
 
