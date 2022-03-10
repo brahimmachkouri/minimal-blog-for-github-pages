@@ -39,6 +39,8 @@ title: the title you want for your post \
 category: what category the post belongs to \
 tags : keywords to easily find the post with a search
 
+Or, if you want, I've written [a Tampermonkey userscript](https://gist.github.com/brahimmachkouri/8d84843c66fcc340b195fc2778df5d01).
+
 Then wait for about 1 minute or 2, then go to your blog homepage. (It should be https://yourusername.github.io/repositoryname/)
 
 ## Note
